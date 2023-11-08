@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 74px;
+  box-sizing: border-box;
+  position: relative;
+} 
+
+.header__logo {
+  margin: 0 0 0 70px;
+  padding: 3px 0;
+  height: 38px;
+  width: 38px;
+} 
+
+.header_theme_blue {
+  background-color: #073042;
+}
+
+.header__authorized-user {
+  position: absolute;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__authorized-user li {
+  margin-right: 30px;
+}
+
+.header__authorized-user li:last-of-type {
+  margin-right: 0;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  transition: opacity ease-in-out .2s;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.header__link_login {
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px;
+  background-color: #3ddc84;
+  color: #000;
+  border-radius: 3px;
+}
+
+.header__link_login:hover {
+  opacity: .8;
+}
+
+.header__side-menu {
+  z-index: 1;
+  display: none;
+}
+
+.header__side-menu:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__authorized-user {
+  right: 30px;
+  }
+  .header__logo {
+    margin: 0 0 0 30px;;
+}  
+  .header__side-menu {
+    display: block;
+    position: absolute;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity ease-in-out .2s;
+    border: none;
+    background: url('../../images/hamburger-icon.svg') center no-repeat;
+    background-size: cover;
+  }
+
+  .header__side-menu_opened {
+    position: absolute;
+    background: url('../../images/close-button-side-menu.svg') center no-repeat;
+    background-size: cover;
+    top: 23px;
+    right: 23px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .header__logo {
+    margin-left: 14px;
+  } 
+
+  .header__authorized-user {
+    right: 14px;
+  }
+
+  .header__link {
+    font-size: 10px;
+  }
+
+  .header__authorized-user li {
+    margin-right: 15px;
+  }
+
+  .header__authorized-user li:last-of-type {
+    margin-right: 0;
+  }
+
+  .header__side-menu {
+    right: 14px;
+    width: 40px;
+    height: 43px;;
+  }
+
+  .header__side-menu_opened {
+    top: 14px;
+    right: 14px ;
+  }
+}
