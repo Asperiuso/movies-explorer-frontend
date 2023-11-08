@@ -1,4 +1,4 @@
-# movies-explorer-api
+# movies-explorer-frontend
 
 Репозиторий для приложения дипломного проекта `Movies`, в
 ключающий фронтенд часть приложения со следующими возможностями: авторизации и регистрации пользователей, операции с фильмами.
@@ -14,4 +14,4 @@ dark-3
 IP 
 Backend https://api.m4u.nomoredomainsrocks.ru
 Frontend https://m4u.nomoredomainsrocks.ru
-# movies-explorer-frontend
+
