@@ -72,7 +72,7 @@ function Profile() {
         </form>
       </div>
 
-  </section>   
+   </section>   
   )
 }
 

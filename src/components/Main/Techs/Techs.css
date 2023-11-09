@@ -62,14 +62,26 @@
   letter-spacing: -0.04em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .techs {
     padding: 90px 50px;
+    padding-bottom: 80px;
+
   }
 
   .techs__subtitle {
     margin-top: 80px;
     margin-bottom: 22px;
+  }
+
+  .techs__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 84px);
+    grid-gap: 10px;
+    max-width: 648px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 
   .techs__paragraph {

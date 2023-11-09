@@ -9,7 +9,7 @@ function Portfolio() {
         <li className="portfolio__list-item">
           <a
             className="portfolio__link link"
-            href="https://github.com/Asperiuso/how-to-learn"
+            href="https://Elya-i.github.io/how-to-learn/"
             target="_blank"
             rel="noreferrer"
           >
@@ -20,18 +20,18 @@ function Portfolio() {
         <li className="portfolio__list-item">
           <a
             className="portfolio__link link"
-            href="https://asperiuso.github.io/"
+            href="https://Elya-i.github.io/russian-travel/"
             target="_blank"
             rel="noreferrer"
           >
-            Адаптивный сайт
+             Адаптивный сайт
             <span className="portfolio__links-arrow">&#8599;</span>
           </a>
         </li>
         <li className="portfolio__list-item">
           <a
             className="portfolio__link link"
-            href="https://github.com/Asperiuso/react-mesto-api-full-gha"
+            href="https://elya-i.students.nomoredomainsicu.ru"
             target="_blank"
             rel="noreferrer"
           >

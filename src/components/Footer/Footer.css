@@ -61,12 +61,13 @@
   .footer {
     padding-right: 30px;
     padding-left: 30px;
+    padding-top: 60px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .footer {
-    padding: 80px 10px 20px;
+    padding: 60px 10px 20px;
   }
 
   .footer__title {

@@ -14,7 +14,7 @@ function Footer() {
           <p className="footer__copyright">&copy; 2023</p>
           <ul className="footer__links-container">
             <li><a href="https://praktikum.yandex.ru/" className="footer__link link" target="_blank" rel="noreferrer">Яндекс.Практикум</a></li>
-            <li><a href="https://github.com/Asperiuso/movies-explorer-frontend" className="footer__link link" target="_blank" rel="noreferrer">Github</a></li>
+            <li><a href="https://github.com/Elya-i/movies-explorer-frontend" className="footer__link link" target="_blank" rel="noreferrer">Github</a></li>
           </ul>
         </div>
       </footer>

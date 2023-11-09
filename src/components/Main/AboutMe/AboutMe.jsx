@@ -20,7 +20,7 @@ function AboutMe() {
           фриланс-заказами и ушёл с постоянной работы.
         </p>
         <a className="about-me__biography-link link"
-          href="https://github.com/Asperiuso"
+          href="https://github.com/Elya-i"
           rel="noreferrer"
           target="_blank">
           Github

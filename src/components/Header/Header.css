@@ -76,7 +76,7 @@
 @media screen and (max-width: 768px) {
 
   .header__authorized-user {
-  right: 30px;
+   right: 30px;
   }
   .header__logo {
     margin: 0 0 0 30px;;
