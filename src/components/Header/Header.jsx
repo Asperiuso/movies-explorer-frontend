@@ -18,6 +18,7 @@ function Header({ loggedIn }) {
     location.pathname === '/profile' ?
     (
       <header className={`header ${!loggedIn ? 'header_theme_blue' : ''}`}>
+        <section className="header__nav">
         <Link to='/' className="header__link link">
           <img src={headerLogo} className="header__logo" alt="Логотип проекта Movies Explorer" />
         </Link>
@@ -36,6 +37,7 @@ function Header({ loggedIn }) {
             </li>
           </ul>
         }
+        </section>
       </header>
     )
     :

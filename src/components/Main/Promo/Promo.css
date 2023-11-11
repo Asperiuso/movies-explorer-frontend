@@ -1,5 +1,4 @@
 .promo {
-  width: 100%;
   min-height: 524px;
   display: flex;
   flex-direction: column;
@@ -9,12 +8,12 @@
 }
 
 .promo__container {
+  padding-bottom: 40px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  padding-bottom: 14px;
 }
 
 .promo__title {
@@ -33,11 +32,15 @@
   width: 320px;
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (max-width: 768px) {
   .promo {
     min-height: 784px;
   }
 
+  .promo__container {
+    padding-bottom: 14px;
+  }
+  
   .promo__title {
     padding-right: 20px;
     padding-left: 20px;
@@ -49,6 +52,10 @@
     min-height: 570px;
   }
 
+  .promo__container {
+    padding-bottom: 38px;
+  }
+  
   .promo__title {
     font-size: 31px;
     line-height: 39px;

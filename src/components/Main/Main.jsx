@@ -11,9 +11,10 @@ function Main() {
     <main className="main">
       <Promo />
       <NavTab />
-      <AboutProject />
+      <section className='main__section'><AboutProject />
       <Techs />
       <AboutMe />
+      </section>
     </main>
   );
 }

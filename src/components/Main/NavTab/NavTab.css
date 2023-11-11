@@ -12,6 +12,7 @@
   display: flex;
   list-style-type: none;
   margin: 0;
+  padding-bottom: 1px;
   padding-left: 0;
 }
 
@@ -20,9 +21,23 @@
 }
 
 .nav-tab__link {
-  margin-right: 40px;
+  margin-right: 41px;
   font-size: 13px;
   line-height: 16px;
   text-decoration: underline;
+  text-underline-offset: 2px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 320px) {
+  .nav-tab__link {
+    margin-right: 25px;
+    font-size: 11px;
+    text-underline-offset: 1px;
+  }
+
+  .nav-tab__list {
+  max-width: 214px;
+  padding-bottom: 1px;
+  }
 }

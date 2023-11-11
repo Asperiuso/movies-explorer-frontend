@@ -5,28 +5,28 @@ import Portfolio from '../Portfolio/Portfolio';
 
 function AboutMe() {
   return (
-    <section className="about-me"id ="aboutMe-anchor" aria-label="Информация о студенте">
-      <h1 className="about-me__title">
-        Студент
-      </h1>
-      <article className="about-me__biography">
-        <img src={photo} className="about-me__biography-photo" alt="Фотография студента" />
-        <h2 className="about-me__biography-name">Виталий</h2>
-        <p className= "about-me__biography-profession">Фронтенд-разработчик.</p>
-        <p className="about-me__biography-text">
-          Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. 
-          Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в 
-          компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься 
-          фриланс-заказами и ушёл с постоянной работы.
-        </p>
-        <a className="about-me__biography-link link"
-          href="https://github.com/Elya-i"
-          rel="noreferrer"
-          target="_blank">
-          Github
-        </a>
+    <section id="about-me" className="about-me">
+      <h2 className="about-me__header">Студент</h2>
+      
+      <article className="about-me__container">
+        
+        <article className="about-me__info">
+          <h3 className="about-me__title">Виталий</h3>
+          <p className="about-me__subtitle">
+            Фронтенд-разработчик, 30 лет
+          </p>
+          <p className="about-me__text">
+            Я родился и живу в Саратове, закончил факультет экономики СГУ. У
+            меня есть жена и&nbsp;дочь. Я люблю слушать музыку, а ещё увлекаюсь
+            бегом. Недавно начал кодить. С&nbsp;2015 года работал в компании «СКБ
+            Контур». После того, как&nbsp;прошёл курс по веб-разработке, начал
+            заниматься фриланс-заказами&nbsp;и ушёл с постоянной работы.
+          </p>
+          <a className="about-me__link" href="https://github.com/Asperiuso" >Github</a>
+        </article>
+        <img src={photo} alt="Фото студента" className="about-me__image" />
       </article>
-      <Portfolio />
+<Portfolio />
     </section>
   );
 }

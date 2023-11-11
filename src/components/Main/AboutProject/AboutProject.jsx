@@ -1,31 +1,43 @@
 import React from 'react';
+
 import './AboutProject.css';
 
-function AboutProject( ) {
+function AboutProject() {
   return (
-    <section className="about-project" id="aboutProject-anchor" aria-label="Краткое описание проекта">
-      <h2 className="about-project__title">О проекте</h2>
-      <div className="about-project__article-container">
-        <article className="about-project__article">
-          <h3 className="about-project__article-title">Дипломный проект включал 5 этапов</h3>
-          <p className="about-project__article-paragraph">
-            Составление плана, работу над бэкендом,
-            вёрстку, добавление функциональности и финальные доработки.
+    <section id="about-project" className="about-project">
+      <h2 className="about-project__header">О проекте</h2>
+      <div className="two-columns">
+        <div className="two-columns__item">
+          <h3 className="two-columns__title">
+            Дипломный проект включал 5 этапов
+          </h3>
+          <p className="two-columns__text">
+            Составление плана, работу над бэкендом, вёрстку, добавление
+            функциональности и финальные доработки.
           </p>
-        </article>
-        <article className="about-project__article">
-          <h3 className="about-project__article-title">На выполнение диплома ушло 5 недель</h3>
-          <p className="about-project__article-paragraph">
-            У каждого этапа был мягкий и жёсткий дедлайн, которые нужно было соблюдать,
-            чтобы успешно защититься.
+        </div>
+
+        <div className="two-columns__item">
+          <h3 className="two-columns__title">
+            На выполнение диплома ушло 5 недель
+          </h3>
+          <p className="two-columns__text">
+            У каждого этапа был мягкий и жёсткий дедлайн, которые нужно было
+            соблюдать, чтобы успешно защититься.
           </p>
-        </article>
+        </div>
       </div>
-      <div className="about-project__timeline">
-        <div className="about-project__backend-timeline">1 неделя</div>
-        <div className="about-project__frontend-timeline">4 недели</div>
-        <div className="about-project__backend-title">Back-end</div>
-        <div className="about-project__frontend-title">Front-end</div>
+
+      <div className="timeline">
+        <div className="timeline__item">
+          <h4 className="timeline__title timeline__title_type_color">1 неделя</h4>
+          <p className="timeline__text">Back-end</p>
+        </div>
+
+        <div className="timeline__item">
+          <h4 className="timeline__title">4 недели</h4>
+          <p className="timeline__text">Front-end</p>
+        </div>
       </div>
     </section>
   );
