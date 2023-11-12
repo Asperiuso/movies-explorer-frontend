@@ -4,7 +4,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 60px 70px 80px;
+  padding: 60px 70px 158px;
   background-color: #202020;
 }
 
@@ -15,7 +15,7 @@
 
 .movies__more-button {
   padding: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-decoration: none;

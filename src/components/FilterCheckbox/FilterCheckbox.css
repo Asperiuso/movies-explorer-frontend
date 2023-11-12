@@ -36,10 +36,10 @@
   background-color: #ffffff;
   position: absolute;
   content: "";
-  height: 14px;
-  width: 14px;
-  left: 2px;
-  bottom: 3px;
+  height: 16px;
+  width: 16px;
+  left: -2px;
+  bottom: 2px;
   -webkit-transition: 0.4s;
   transition: 0.5s;
   border-radius: 50%;
@@ -60,4 +60,10 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+@media screen and (max-width: 768px) {
+  .filter-checkbox {
+    margin-bottom: 50px;
+  }
+  
 }

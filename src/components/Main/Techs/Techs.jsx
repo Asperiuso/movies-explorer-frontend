@@ -9,8 +9,7 @@ function Techs() {
       <div className="techs__container">
         <h3 className="techs__title">7 технологий</h3>
         <p className="techs__text">
-          На курсе веб-разработки мы освоили технологии, которые применили{' '}
-          в дипломном&nbsp;проекте.
+          На курсе веб-разработки мы освоили технологии, которые применили в&nbsp;дипломном&nbsp;проекте.
         </p>
         <ul className="techs__list">
           <li className="techs__list-item">HTML</li>

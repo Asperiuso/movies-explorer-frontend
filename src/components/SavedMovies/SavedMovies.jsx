@@ -3,8 +3,10 @@ import Movies from '../Movies/Movies';
 
 function SavedMovies() {
   return (
-    <main className="saved-movies">
-      <Movies />
+    <main className="main">
+      <section className="saved-movies">
+        <Movies />
+      </section>
     </main>
   );
 }

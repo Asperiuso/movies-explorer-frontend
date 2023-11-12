@@ -110,7 +110,8 @@
   .about-me__container {
     flex-direction: column-reverse;
     row-gap: 40px;
-    margin: 0;
+    margin: auto;
+    align-items: center;
   }
   .about-me__title {
     font-size: 30px;
