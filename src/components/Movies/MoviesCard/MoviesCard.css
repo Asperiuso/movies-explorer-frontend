@@ -6,10 +6,10 @@
   max-width: 364px;
   margin: 0;
   border-radius: 6px;
-  background:#222;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08); 
+  background: #222;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   height: 281px;
-}   
+}
 
 .card__information {
   position: relative;
@@ -50,7 +50,7 @@
   background-color: transparent;
   width: 30px;
   height: 30px;
-  padding: 10px 8px 8px 8px; 
+  padding: 10px 8px 8px 8px;
 }
 
 .card__like-button_active {
@@ -79,7 +79,7 @@
 .card__time {
   position: relative;
   margin: 0;
-  padding: 18px 0 0 ;
+  padding: 18px 0 0;
   color: #8b8b8b;
   font-size: 11px;
   font-weight: 400;
@@ -92,15 +92,20 @@
     height: 262px;
     margin: 0 auto;
   }
+
   .card__information {
     padding: 15px 14px 14px;
   }
+
   .card__image {
     width: 100%;
     max-width: 339px;
     height: 190px;
   }
-
+  .card__like-button {
+    top: 10px;
+    right: 13px;
+  }
   .card__time {
     padding-top: 15px;
   }
@@ -109,5 +114,19 @@
 @media screen and (max-width: 767px) {
   .card {
     max-width: 300px;
+    max-height: 237px;
   }
-} 
+
+  .card__title {
+    font-size: 12px;
+  }
+
+  .card__time {
+    padding-top: 13px;
+  }
+
+  .card__like-button {
+    top: 8px;
+    right: 11px;
+  }
+}

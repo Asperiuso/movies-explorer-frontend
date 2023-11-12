@@ -146,12 +146,15 @@
 
   .header__side-menu {
     right: 14px;
-    width: 44px;
+    width: 40px;
     height: 40px;
   }
 
   .header__side-menu_opened {
     top: 14px;
     right: 14px ;
+    width: 32px;
+    height: 32px;
   }
+
 }

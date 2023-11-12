@@ -55,3 +55,16 @@
   opacity: .8;
   transition: opacity .3s ease-in-out;
 }
+
+@media screen and (max-width: 400px) {
+  .search__wrap {
+    max-width: 290px;
+    margin: auto;
+    margin-bottom: 42px;
+  }
+  .search__input {
+    margin-left: 15px;
+    font-size: 11px;
+  }
+
+}

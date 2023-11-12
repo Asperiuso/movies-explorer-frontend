@@ -13,9 +13,6 @@
   text-rendering: optimizeLegibility;
 }
 
-.page__main {
-  max-width: 1280px;
-}
 .page__container_blue {
   background-color: #073042;
 }
