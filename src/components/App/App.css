@@ -1,0 +1,40 @@
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  background-color: #202020;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.page__container_blue {
+  background-color: #073042;
+}
+
+.link {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+  border-radius: 3px;
+}
+
+.button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
