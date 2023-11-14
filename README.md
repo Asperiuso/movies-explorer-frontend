@@ -4,6 +4,7 @@
 ключающий фронтенд часть приложения со следующими возможностями: авторизации и регистрации пользователей, операции с фильмами.
 
 Адрес репозитория: https://github.com/Asperiuso/movies-explorer-frontend
+
 [Ссылка на Pull requests](https://github.com/Asperiuso/movies-explorer-frontend/pull/2)
 ## Название макета
 
