@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 1280px;
+  width: 100%;
   margin: auto;
   padding:0 70px 20px;
   background-color: #202020;
@@ -10,6 +10,7 @@
 
 .footer__title {
   color: #8b8b8b;
+  max-width: 1280px;
   border-bottom: 1px solid #424242;
   font-size: 13px;
   font-weight: 400;
@@ -22,6 +23,7 @@
 
 .footer__data {
   display: flex;
+  max-width: 1280px;
   padding-top: 2px;
   justify-content: space-between;
 }
