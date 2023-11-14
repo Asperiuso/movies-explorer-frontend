@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./AuthLayout.css";
 import headerLogo from '../../images/header-logo.svg';
-import Form from "../Form /Form";
+import Form from "../Form/Form";
 import AuthTitle from "../AuthTitle/AuthTitle";
 
 function AuthLayout({
