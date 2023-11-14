@@ -2,15 +2,20 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 2500px;
   margin: auto;
   padding:0 70px 20px;
   background-color: #202020;
 }
 
+.footer__nav {
+  display: flex;
+  align-items: center;
+  max-width: calc(100% - 140px);
+}
+
 .footer__title {
   color: #8b8b8b;
-  max-width: 1280px;
   border-bottom: 1px solid #424242;
   font-size: 13px;
   font-weight: 400;
@@ -23,7 +28,6 @@
 
 .footer__data {
   display: flex;
-  max-width: 1280px;
   padding-top: 2px;
   justify-content: space-between;
 }
