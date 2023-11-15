@@ -52,7 +52,7 @@ function App() {
   });
 
   const moviesState = localStorage.getItem('moviesState');
- 
+
   const { pathname } = useLocation();
 
   const navigate = useNavigate();
@@ -70,6 +70,9 @@ function App() {
           setLoggedIn(true);
         })
         .catch((error) => {
+          localStorage.removeItem("isLoggedIn");
+          navigate("/signup", { replace: true });
+          setLoggedIn(false);
           console.error(error);
         })
         .finally(() => setPreloaderActive(false))
@@ -128,7 +131,7 @@ function App() {
       })
       .finally(() => setIsFormDisabled(false))
   }
-   
+
   function handleRegistration({ email, password, name }) {
     setIsFormDisabled(true)
     return mainApi.register({email, password, name})
@@ -208,6 +211,8 @@ function App() {
     localStorage.clear();
     setCurrentUser(() => ({name: '', email: ''}));
     resetState();
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("token");
     setLoggedIn(false); 
     navigate('/', {replace: true});
   }

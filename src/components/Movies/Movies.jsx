@@ -8,15 +8,18 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import MoviesCard from '../MoviesCard/MoviesCard';
 import { useMediaQuery } from 'react-responsive';
 import {
+  INITIAL_CARDS_QUANTITY_OVER_DESKTOP,
   INITIAL_CARDS_QUANTITY_DESKTOP,
   INITIAL_CARDS_QUANTITY_TABLET,
   INITIAL_CARDS_QUANTITY_MOBILE,
+  ADDED_CARDS_QUANTITY_OVER_DESKTOP,
   ADDED_CARDS_QUANTITY_DESKTOP,
   ADDED_CARDS_QUANTITY_TABLET,
   ADDED_CARDS_QUANTITY_MOBILE,
 } from '../../utils/constants';
 
 function Movies({ onSearch, onLike, onDislike, isLoading }) {
+  const sizeOverDesktop = useMediaQuery({ query: "(min-width: 1412px)" });
   const sizeDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
   const sizeMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const sizeTablet = useMediaQuery({ query: "(min-width: 768px) and (max-width: 1279px)",});
@@ -33,6 +36,9 @@ function Movies({ onSearch, onLike, onDislike, isLoading }) {
 
   useEffect(() => {
     const initialQuantity = (() => {
+      if (sizeOverDesktop) {
+        return INITIAL_CARDS_QUANTITY_OVER_DESKTOP;
+      }
       if (sizeDesktop) {
         return INITIAL_CARDS_QUANTITY_DESKTOP;
       }
@@ -44,7 +50,7 @@ function Movies({ onSearch, onLike, onDislike, isLoading }) {
       }
     })();
     setCardsQuantity(initialQuantity);
-  }, [filteredMovies, sizeDesktop, sizeTablet, sizeMobile]);
+  }, [filteredMovies, sizeOverDesktop, sizeDesktop, sizeTablet, sizeMobile]);
 
   const moviesCardElements = filteredMovies.map((card) => (
     <MoviesCard
@@ -60,6 +66,9 @@ function Movies({ onSearch, onLike, onDislike, isLoading }) {
 
   function handleMoreClick()  {
     const increasedQuantity = (() => {
+      if (sizeOverDesktop) {
+        return ADDED_CARDS_QUANTITY_OVER_DESKTOP;
+      }
       if (sizeDesktop) {
         return ADDED_CARDS_QUANTITY_DESKTOP;
       }

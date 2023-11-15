@@ -3,9 +3,11 @@ export const MOVIES_API_URL = 'https://api.nomoreparties.co';
 
 export const REG_EXP_USER_NAME = "^[A-Za-zА-Яа-яЁё\\-\\s]+$";
 
+export const INITIAL_CARDS_QUANTITY_OVER_DESKTOP = 16;
 export const INITIAL_CARDS_QUANTITY_DESKTOP = 12;
 export const INITIAL_CARDS_QUANTITY_TABLET = 8;
 export const INITIAL_CARDS_QUANTITY_MOBILE = 5;
+export const ADDED_CARDS_QUANTITY_OVER_DESKTOP = 4;
 export const ADDED_CARDS_QUANTITY_DESKTOP = 3;
 export const ADDED_CARDS_QUANTITY_TABLET = 2;
 export const ADDED_CARDS_QUANTITY_MOBILE = 2;
