@@ -42,11 +42,11 @@ function MoviesCard({ card, onLike, onDislike, buttonType }) {
       <a href={trailerLink} className="card__link link" target="_blank" rel="noreferrer">
         <img src={image.url ? MOVIES_API_URL + image.url : image} className="card__image" alt={`Изображение фильма ${card.nameRU || card.nameEN}`} />
       </a>  
-      <div className="card__information">
+      <section className="card__information">
         <h2 className="card__title">{nameRU || nameEN}</h2>
         {cardButton}
         <p className="card__time">{convertedDuration}</p>
-      </div>
+      </section>
     </li>
   );
 }

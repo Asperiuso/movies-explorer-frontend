@@ -67,6 +67,11 @@ function Profile({ isFormDisabled, onUpdateUser, onLogout }) {
               onChange={onChange}
               value={values.name || ""}
             />
+            {errors.name && (
+              <span className='form__input-error form__input-error_type_profile'>
+                {errors.name}
+              </span>
+            )}
           </label>
           <label className="form__input-container form__input-container_type_profile">
             E-mail
@@ -83,58 +88,25 @@ function Profile({ isFormDisabled, onUpdateUser, onLogout }) {
               onChange={onChange}
               value={values.email || ""}
             />
+            {errors.email && (
+              <span className='form__input-error form__input-error_type_profile'>
+                {errors.email}
+              </span>
+            )}
           </label>
-          <div
-            className={`form__errors-container ${
-              errors.name || errors.email ? "form__errors-container_active" : ""
-            }`}
-          >
-            <div className="form__error-container">
-              <p
-                className={`form__error-name ${
-                  errors.name ? "form__error-name_active" : ""
-                }`}
-              >
-                Имя:
-              </p>
-              <span
-                className={`form__input-error form__input-error_type_profile ${
-                  errors.name ? "form__input-error_active" : ""
-                }`}
-              >
-                {errors.name || ""}
-              </span>
-            </div>
-            <div className="form__error-container">
-              <p
-                className={`form__error-name ${
-                  errors.email ? "form__error-name_active" : ""
-                }`}
-              >
-                E-mail:
-              </p>
-              <span
-                className={`form__input-error form__input-error_type_profile ${
-                  errors.email ? "form__input-error_active" : ""
-                }`}
-              >
-                {errors.email || ""}
-              </span>
-            </div>
-          </div>
           <button
-          className={`form__button-submit form__button-submit_type_profile ${
-            !isModifying
-            ? "form__button-submit_hidden"
-            : 
-            (!isFormValid || isFormDisabled || isUserDataChanged) && 
-            "form__button-submit_disabled"} button`}
-          type="submit"
-          isFormValid={isFormValid}
-          isFormDisabled={isFormDisabled}
-        >
-          {isFormDisabled ? "Сохранение..." : "Сохранить"}
-        </button>
+            className={`form__button-submit form__button-submit_type_profile ${
+              !isModifying
+              ? "form__button-submit_hidden"
+              : 
+              (!isFormValid || isFormDisabled || isUserDataChanged) && 
+              "form__button-submit_disabled"} button`}
+            type="submit"
+            isFormValid={isFormValid}
+            isFormDisabled={isFormDisabled}
+          >
+            {isFormDisabled ? "Сохранение..." : "Сохранить"}
+          </button>
         </Form>
         <div
           className={`profile__edit ${

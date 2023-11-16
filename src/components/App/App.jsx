@@ -208,13 +208,20 @@ function App() {
   }
 
   function handleLogout() {
-    localStorage.clear();
-    setCurrentUser(() => ({name: '', email: ''}));
-    resetState();
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("token");
-    setLoggedIn(false); 
-    navigate('/', {replace: true});
+    mainApi.logout()  // Обратите внимание на добавленные скобки
+      .then(() => {
+        localStorage.clear();
+        setCurrentUser(() => ({ name: '', email: '' }));
+        resetState();
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("token");
+        setLoggedIn(false);
+        navigate('/', { replace: true });
+      })
+      .catch((error) => {
+        // Обработка ошибок при выходе
+        console.error("Logout error:", error);
+      });
   }
 
   useEffect(() => {
@@ -306,7 +313,7 @@ function handleSearchMovies() {
   }, [handleResize]);
 
   return (
-    <div className={`page ${pathname === '/' && "page_theme_blue"}`}>
+    <section className={`page ${pathname === '/' && "page_theme_blue"}`}>
       {isPreloaderActive ? (
         <Preloader />
       ) : (
@@ -366,7 +373,7 @@ function handleSearchMovies() {
             <Footer />
           </CurrentUserContext.Provider>
       )}
-    </div>
+    </section>
   );
 }
 

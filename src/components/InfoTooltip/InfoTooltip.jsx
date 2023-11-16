@@ -25,8 +25,8 @@ function InfoTooltip({ infoTooltip, onClose }) {
   const { success, message, isOpen } = infoTooltip;
 
   return (
-    <div className={`popup ${isOpen && "popup_opened"}`}>
-      <div className="popup__container">
+    <section className={`popup ${isOpen && "popup_opened"}`}>
+      <section className="popup__container">
         <button
           onClick={onClose}
           aria-label="Закрыть"
@@ -39,8 +39,8 @@ function InfoTooltip({ infoTooltip, onClose }) {
           alt="Успешная регистрация"
         />
         <h3 className="popup__title">{message}</h3>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

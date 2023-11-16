@@ -20,9 +20,9 @@ import {
 
 function Movies({ onSearch, onLike, onDislike, isLoading }) {
   const sizeOverDesktop = useMediaQuery({ query: "(min-width: 1412px)" });
-  const sizeDesktop = useMediaQuery({ query: "(min-width: 1280px)" });
-  const sizeMobile = useMediaQuery({ query: "(max-width: 767px)" });
-  const sizeTablet = useMediaQuery({ query: "(min-width: 768px) and (max-width: 1279px)",});
+  const sizeDesktop = useMediaQuery({ query: "(min-width: 1088px) and (max-width: 1411px)" });
+  const sizeMobile = useMediaQuery({ query: "(max-width: 683px)" });
+  const sizeTablet = useMediaQuery({ query: "(min-width: 684px) and (max-width: 1087px)",});
   const [ cardsQuantity, setCardsQuantity ] = useState(INITIAL_CARDS_QUANTITY_MOBILE);
 
   const {
@@ -108,9 +108,9 @@ function Movies({ onSearch, onLike, onDislike, isLoading }) {
         <MoviesCardList
           moviesCardElements={shownCardElements} />
         {isIncreasedCardsActive && (
-          <div className="movies__more-button-container">
+          <section className="movies__more-button-container">
             <button className="movies__more-button button" type="button" onClick={handleMoreClick}>Ещё</button>
-          </div>    
+          </section>    
         )}
       </main>
   );

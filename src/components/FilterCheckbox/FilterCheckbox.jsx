@@ -6,7 +6,7 @@ function FilterCheckbox({ isShort, setIsShort }) {
     event.target.checked ? setIsShort(true) : setIsShort(false);
 
   return (
-    <div className="filter-checkbox">
+    <section className="filter-checkbox">
       <label className="filter-checkbox__label">
         <input
           type="checkbox"
@@ -17,7 +17,7 @@ function FilterCheckbox({ isShort, setIsShort }) {
         <span className="filter-checkbox__toggle-icon" />
       </label>
       <p className="filter-checkbox__text">Короткометражки</p>
-    </div>
+    </section>
   );
 }
 
